@@ -9,6 +9,7 @@ struct Person {
     let name: String
     let surname: String
     let phone: String
+    let country: String
     let email: String
     
     var fullName: String {
