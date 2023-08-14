@@ -16,7 +16,7 @@ struct Contact {
     }
     
     static func getContactList() -> [Contact] {
-        var list = [Contact]()
+        var contacts = [Contact]()
         
         let names = DataStore.shared.names.shuffled()
         let surnames = DataStore.shared.surnames.shuffled()
@@ -34,9 +34,10 @@ struct Contact {
                     andSurname: surname
                 )
             )
+            contacts.append(contact)
         }
         
-        return list
+        return contacts
     }
     
     static func getRandomEmail(forName name: String, andSurname surname: String) -> String {
@@ -54,11 +55,10 @@ struct Contact {
             countryCode = DataStore.shared.countryCodes[index].value
         }
         
-        
         let operatorCode = String(Int.random(in: 10...99))
         let subscriberNumber = "XYY-YY-YY".map { char in
             switch char {
-                // Subscriber's number first digit shouldn't be 0
+            // Subscriber's number first digit shouldn't be 0
             case "X": return String(Int.random(in: 1...9))
             case "Y": return String(Int.random(in: 0...9))
             default: return "-"
