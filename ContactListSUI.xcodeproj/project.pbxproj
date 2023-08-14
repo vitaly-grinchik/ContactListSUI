@@ -12,7 +12,7 @@
 		D83F4B202A8A980900C67B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83F4B1F2A8A980900C67B28 /* Assets.xcassets */; };
 		D83F4B232A8A980900C67B28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83F4B222A8A980900C67B28 /* Preview Assets.xcassets */; };
 		D83F4B2C2A8A983B00C67B28 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B2B2A8A983B00C67B28 /* DataStore.swift */; };
-		D83F4B2F2A8A984F00C67B28 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B2E2A8A984F00C67B28 /* Person.swift */; };
+		D83F4B2F2A8A984F00C67B28 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B2E2A8A984F00C67B28 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		D83F4B1F2A8A980900C67B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83F4B222A8A980900C67B28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D83F4B2B2A8A983B00C67B28 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		D83F4B2E2A8A984F00C67B28 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D83F4B2E2A8A984F00C67B28 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		D83F4B302A8A985600C67B28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D83F4B2E2A8A984F00C67B28 /* Person.swift */,
+				D83F4B2E2A8A984F00C67B28 /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			files = (
 				D83F4B1E2A8A980400C67B28 /* ContentView.swift in Sources */,
 				D83F4B2C2A8A983B00C67B28 /* DataStore.swift in Sources */,
-				D83F4B2F2A8A984F00C67B28 /* Person.swift in Sources */,
+				D83F4B2F2A8A984F00C67B28 /* Contact.swift in Sources */,
 				D83F4B1C2A8A980400C67B28 /* ContactListSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
