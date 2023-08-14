@@ -55,7 +55,7 @@ final class DataStore {
         "Robinson"
     ]
 
-    let mailServers = [
+    let mailServices = [
         "gmail.com",
         "hotmail.com",
         "icloud.com",
@@ -64,7 +64,7 @@ final class DataStore {
         "outlook.com"
     ]
     
-    let phoneCodes = [
+    let countryCodes = [
         "Australian External Territories": "672",
         "Australia": "61",
         "Austria": "43",
@@ -103,7 +103,7 @@ final class DataStore {
         "Burundi": "257",
         "Bhutan": "975",
         "Vanuatu": "678",
-        "Vatican City State": "39",
+        "Vatican": "39",
         "United Kingdom": "44",
         "Hungary": "36",
         "Venezuela": "58",
@@ -236,7 +236,7 @@ final class DataStore {
         "Saudi Arabia": "966",
         "Swaziland": "268",
         "Svalbard and Jan Mayen Islands": "47",
-        "Korea, Dem. Peoples Republic": "850",
+        "Dem. Peoples Republic of Korea": "850",
         "Yemen, North": "967",
         "Northern Mariana Islands": "670",
         "Seychelles": "248",
@@ -298,7 +298,7 @@ final class DataStore {
         "Ethiopia": "251",
         "South Africa": "27",
         "Yugoslavia": "381",
-        "Korea Republic": "82",
+        "Republic of Korea": "82",
         "Yemen, South": "969",
         "Jamaica": "1-876",
         "Japan": "81"
