@@ -11,7 +11,19 @@ struct ContactInfoView: View {
     
     let contact: Contact
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            HStack() {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                .frame(width: 120, height: 120)
+                Spacer()
+            }
+            .padding()
+                
+            Label(contact.phone.number, systemImage: "phone")
+            Label(contact.email, systemImage: "envelope")
+        }
     }
 }
 
