@@ -14,6 +14,7 @@
 		D83F4B2C2A8A983B00C67B28 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B2B2A8A983B00C67B28 /* DataStore.swift */; };
 		D83F4B2F2A8A984F00C67B28 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B2E2A8A984F00C67B28 /* Contact.swift */; };
 		D83F4B322A8EAD6900C67B28 /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B312A8EAD6900C67B28 /* ContactInfoView.swift */; };
+		D83F4B342A8EB93000C67B28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F4B332A8EB93000C67B28 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D83F4B2B2A8A983B00C67B28 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		D83F4B2E2A8A984F00C67B28 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D83F4B312A8EAD6900C67B28 /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
+		D83F4B332A8EB93000C67B28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D83F4B2D2A8A984100C67B28 /* Services */,
 				D83F4B1B2A8A980400C67B28 /* ContactListSUIApp.swift */,
 				D83F4B1D2A8A980400C67B28 /* ContactListView.swift */,
+				D83F4B332A8EB93000C67B28 /* ContentView.swift */,
 				D83F4B312A8EAD6900C67B28 /* ContactInfoView.swift */,
 				D83F4B1F2A8A980900C67B28 /* Assets.xcassets */,
 				D83F4B212A8A980900C67B28 /* Preview Content */,
@@ -164,6 +167,7 @@
 			files = (
 				D83F4B1E2A8A980400C67B28 /* ContactListView.swift in Sources */,
 				D83F4B2C2A8A983B00C67B28 /* DataStore.swift in Sources */,
+				D83F4B342A8EB93000C67B28 /* ContentView.swift in Sources */,
 				D83F4B2F2A8A984F00C67B28 /* Contact.swift in Sources */,
 				D83F4B1C2A8A980400C67B28 /* ContactListSUIApp.swift in Sources */,
 				D83F4B322A8EAD6900C67B28 /* ContactInfoView.swift in Sources */,
