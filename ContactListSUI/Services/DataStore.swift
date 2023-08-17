@@ -30,6 +30,7 @@ final class DataStore {
         "Diana",
         "Anastasia",
         "Veronica"
+        "James"
     ]
 
     let surnames = [
@@ -37,6 +38,7 @@ final class DataStore {
         "Johnson",
         "Williams",
         "Jones",
+        "Russos",
         "Brown",
         "Davis",
         "Miller",
@@ -48,11 +50,15 @@ final class DataStore {
         "Jackson",
         "White",
         "Harris",
+        "Powers",
         "Martin",
         "Thompson",
         "Garcia",
         "Martinez",
         "Robinson"
+        "Prestly"
+        "Reigan"
+        "Lopez"
     ]
 
     let mailServices = [
