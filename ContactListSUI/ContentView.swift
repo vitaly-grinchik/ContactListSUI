@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            // TODO: - Use enum for ContactListView brief and short
             ContactListView()
                 .tabItem {
                     Image(systemName: "person.2")
