@@ -5,7 +5,8 @@
 //  Created by Виталий Гринчик on 14.08.23.
 //
 
-struct Contact {
+struct Contact: Identifiable {
+    let id: Int
     let name: String
     let surname: String
     let phone: (country: String, number: String)
@@ -26,6 +27,7 @@ struct Contact {
             let name = names[index]
             let surname = surnames[index]
             let contact = Contact(
+                id: Int.random(in: 0...100),
                 name: name,
                 surname: surname,
                 phone: Contact.getRandomPhone(),
@@ -63,9 +65,11 @@ struct Contact {
             case "Y": return String(Int.random(in: 0...9))
             default: return "-"
             }
-        }.joined(separator: " ")
+        }.joined()
         
-        return (countryName, countryCode + operatorCode + subscriberNumber)
+        let phone = "+" + [countryCode, operatorCode, subscriberNumber].joined(separator: " ")
+        
+        return (countryName, phone)
     }
 
 }

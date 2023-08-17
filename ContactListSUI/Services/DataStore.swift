@@ -29,7 +29,7 @@ final class DataStore {
         "Eva",
         "Diana",
         "Anastasia",
-        "Veronica"
+        "Veronica",
         "James"
     ]
 
@@ -55,9 +55,9 @@ final class DataStore {
         "Thompson",
         "Garcia",
         "Martinez",
-        "Robinson"
-        "Prestly"
-        "Reigan"
+        "Robinson",
+        "Prestly",
+        "Reigan",
         "Lopez"
     ]
 
