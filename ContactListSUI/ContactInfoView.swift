@@ -24,6 +24,7 @@ struct ContactInfoView: View {
             Label(contact.phone.number, systemImage: "phone")
             Label(contact.email, systemImage: "envelope")
         }
+        .navigationTitle(contact.fullName)
     }
 }
 

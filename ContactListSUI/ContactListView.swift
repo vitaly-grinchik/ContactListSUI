@@ -13,8 +13,8 @@ struct ContactListView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(contacts, id: \.id) { contact in
+            List(contacts) { contact in
+                NavigationLink(destination: ContactInfoView(contact: contact)) {
                     Text(contact.fullName)
                 }
             }
@@ -22,6 +22,7 @@ struct ContactListView: View {
             .listStyle(.plain)
             .navigationTitle("Contacts")
         }
+        
     }
 }
 
