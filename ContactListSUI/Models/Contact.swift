@@ -11,27 +11,13 @@ struct Contact: Identifiable {
     let id = UUID()
     let name: String
     let surname: String
-    let phone: (country: String, number: String)
+    let phone: String
     let email: String
     
     var fullName: String {
         "\(name) \(surname)"
     }
-    
-    init(name: String, surname: String, phone: (country: String, number: String), email: String) {
-        self.name = name
-        self.surname = surname
-        self.phone = phone
-        self.email = email
-    }
-    
-    init() {
-        self.name = "Steve"
-        self.surname = "Jobs"
-        self.phone = ("USA", "+1 11 111-11-11")
-        self.email = "1@apple.com"
-    }
-    
+
     static func getContactList() -> [Contact] {
         
         func getRandomEmail(forName name: String, andSurname surname: String) -> String {
@@ -39,13 +25,11 @@ struct Contact: Identifiable {
             return "\(name).\(surname)@\(service)".lowercased()
         }
         
-        func getRandomPhone() -> (country: String, number: String) {
-            // Default values
-            var countryName = "USA"
+        func getRandomPhone() -> String {
+            // Default value
             var countryCode = "1"
             
             if let index = DataStore.shared.countryCodes.indices.randomElement() {
-                countryName = DataStore.shared.countryCodes[index].key
                 countryCode = DataStore.shared.countryCodes[index].value
             }
             
@@ -59,9 +43,10 @@ struct Contact: Identifiable {
                 }
             }.joined()
             
-            let phone = "+" + [countryCode, operatorCode, subscriberNumber].joined(separator: " ")
+            let phone = "+" + [countryCode, operatorCode, subscriberNumber]
+                .joined(separator: " ")
             
-            return (countryName, phone)
+            return phone
         }
         
         var contacts = [Contact]()

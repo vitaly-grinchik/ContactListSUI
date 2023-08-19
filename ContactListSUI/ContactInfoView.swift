@@ -21,7 +21,7 @@ struct ContactInfoView: View {
             }
             .padding()
                 
-            Label(contact.phone.number, systemImage: "phone")
+            Label(contact.phone, systemImage: "phone")
             Label(contact.email, systemImage: "envelope")
         }
         .navigationTitle(contact.fullName)
@@ -30,6 +30,13 @@ struct ContactInfoView: View {
 
 struct ContactInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInfoView(contact: Contact())
+        ContactInfoView(
+            contact: Contact(
+                name: "Steve",
+                surname: "Jobes",
+                phone: "=1 11 111-11-11",
+                email: "1@apple.com"
+            )
+        )
     }
 }

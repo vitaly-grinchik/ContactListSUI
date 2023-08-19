@@ -18,9 +18,8 @@ struct DetailedContactListView: View {
                 .padding()
             List(contacts) { contact in
                 Section(contact.fullName) {
-                    Label(contact.phone.number, systemImage: "phone")
+                    Label(contact.phone, systemImage: "phone")
                     Label(contact.email, systemImage: "envelope")
-                    Label(contact.phone.country, systemImage: "flag")
                 }
             }
             .listStyle(.plain)
