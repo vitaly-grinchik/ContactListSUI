@@ -20,7 +20,7 @@ struct ContactListBriefView: View {
             }
             .scrollIndicators(.hidden)
             .listStyle(.plain)
-            .navigationTitle("Contacts")
+            .navigationTitle("Contact List")
         }
     }
 }

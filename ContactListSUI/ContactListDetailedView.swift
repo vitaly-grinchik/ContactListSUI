@@ -22,7 +22,7 @@ struct ContactListDetailedView: View {
             }
             .listStyle(.plain)
             .scrollIndicators(.hidden)
-            .navigationTitle("Contacts")
+            .navigationTitle("Contact List")
         }
     }
 }
