@@ -12,7 +12,10 @@ struct DetailedContactListView: View {
     let contacts: [Contact]
     
     var body: some View {
-        NavigationStack {
+        VStack(alignment: .leading) {
+            Text("Contact List")
+                .font(.largeTitle)
+                .padding()
             List(contacts) { contact in
                 Section(contact.fullName) {
                     Label(contact.phone.number, systemImage: "phone")
@@ -21,8 +24,6 @@ struct DetailedContactListView: View {
                 }
             }
             .listStyle(.plain)
-            .scrollIndicators(.hidden)
-            .navigationTitle("Contact List")
         }
     }
 }
