@@ -1,5 +1,5 @@
 //
-//  ContactListDetailedView.swift
+//  DetailedContactListView.swift
 //  ContactListSUI
 //
 //  Created by Виталий Гринчик on 19.08.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactListDetailedView: View {
+struct DetailedContactListView: View {
     
     let contacts: [Contact]
     
@@ -27,8 +27,8 @@ struct ContactListDetailedView: View {
     }
 }
 
-struct ContactListDetailedView_Previews: PreviewProvider {
+struct DetailedContactListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListDetailedView(contacts: Contact.getContactList())
+        DetailedContactListView(contacts: Contact.getContactList())
     }
 }

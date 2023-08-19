@@ -13,12 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ContactListBriefView(contacts: contacts)
+            BriefContactListView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "person.2")
                     Text("Contacts")
                 }
-            ContactListDetailedView(contacts: contacts)
+            DetailedContactListView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "phone")
                     Text("Numbers")
