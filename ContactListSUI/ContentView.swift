@@ -10,13 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            // TODO: - Use enum for ContactListView brief and short
-            ContactListView()
+            ContactListBriefView()
                 .tabItem {
                     Image(systemName: "person.2")
                     Text("Contacts")
                 }
-            ContactListView()
+            ContactListBriefView()
                 .tabItem {
                     Image(systemName: "phone")
                     Text("Numbers")

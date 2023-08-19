@@ -30,6 +30,6 @@ struct ContactInfoView: View {
 
 struct ContactInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInfoView(contact: Contact(id: 1, name: "John", surname: "Smith", phone: ("USA", "111111"), email: "email@mail.ru"))
+        ContactInfoView(contact: Contact())
     }
 }

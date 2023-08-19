@@ -1,5 +1,5 @@
 //
-//  ContactListView.swift
+//  ContactListBriefView.swift
 //  ContactListSUI
 //
 //  Created by Виталий Гринчик on 14.08.23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactListView: View {
+struct ContactListBriefView: View {
     
     private let contacts = Contact.getContactList()
     
@@ -26,8 +26,8 @@ struct ContactListView: View {
     }
 }
 
-struct ContactListView_Previews: PreviewProvider {
+struct ContactListBriefView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListView()
+        ContactListBriefView()
     }
 }
