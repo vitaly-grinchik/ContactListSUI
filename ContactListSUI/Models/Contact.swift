@@ -5,8 +5,10 @@
 //  Created by Виталий Гринчик on 14.08.23.
 //
 
+import Foundation
+
 struct Contact: Identifiable {
-    let id: Int
+    let id = UUID()
     let name: String
     let surname: String
     let phone: (country: String, number: String)
@@ -27,7 +29,6 @@ struct Contact: Identifiable {
             let name = names[index]
             let surname = surnames[index]
             let contact = Contact(
-                id: Int.random(in: 0...100),
                 name: name,
                 surname: surname,
                 phone: Contact.getRandomPhone(),
