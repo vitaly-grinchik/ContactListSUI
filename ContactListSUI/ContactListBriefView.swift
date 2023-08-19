@@ -22,7 +22,6 @@ struct ContactListBriefView: View {
             .listStyle(.plain)
             .navigationTitle("Contacts")
         }
-        
     }
 }
 

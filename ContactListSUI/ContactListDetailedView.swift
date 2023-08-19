@@ -12,14 +12,18 @@ struct ContactListDetailedView: View {
     private let contacts = Contact.getContactList()
     
     var body: some View {
-        List(contacts) { contact in
-            Section(contact.fullName) {
-                Label(contact.phone.number, systemImage: "phone")
-                Label(contact.email, systemImage: "envelope")
-                Label(contact.phone.country, systemImage: "flag")
+        NavigationStack {
+            List(contacts) { contact in
+                Section(contact.fullName) {
+                    Label(contact.phone.number, systemImage: "phone")
+                    Label(contact.email, systemImage: "envelope")
+                    Label(contact.phone.country, systemImage: "flag")
+                }
             }
+            .listStyle(.plain)
+            .scrollIndicators(.hidden)
+            .navigationTitle("Contacts")
         }
-        .listStyle(.plain)
     }
 }
 
