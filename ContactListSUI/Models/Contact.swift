@@ -18,6 +18,20 @@ struct Contact: Identifiable {
         "\(name) \(surname)"
     }
     
+    init(name: String, surname: String, phone: (country: String, number: String), email: String) {
+        self.name = name
+        self.surname = surname
+        self.phone = phone
+        self.email = email
+    }
+    
+    init() {
+        self.name = "Steve"
+        self.surname = "Jobs"
+        self.phone = ("USA", "+1 11 111-11-11")
+        self.email = "1@apple.com"
+    }
+    
     static func getContactList() -> [Contact] {
         var contacts = [Contact]()
         
