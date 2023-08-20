@@ -14,9 +14,15 @@ struct BriefContactListView: View {
     var body: some View {
         NavigationStack {
             List(contacts) { contact in
-                NavigationLink(destination: ContactInfoView(contact: contact)) {
-                    Text(contact.fullName)
-                }
+                // 1-й вариант
+//                NavigationLink(destination: ContactInfoView(contact: contact)) {
+//                    Text(contact.fullName)
+//                }
+                // 2-й вариант
+                NavigationLink(
+                    contact.fullName,
+                    destination: ContactInfoView(contact: contact)
+                )
             }
             .scrollIndicators(.hidden)
             .listStyle(.plain)
